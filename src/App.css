@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-content {
+    width: 750px;
+    height: 1100px;
+    /*border: 1px solid gray;*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    margin: 16px 0 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 24px 0 16px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.div-flex {
+    display: flex;
+}
+
+.form-control input,
+.form-control select {
+    text-indent: 16px;
+    width: 200px;
+    height: 48px;
+    border-radius: 8px;
+    opacity: 0.5;
+    margin-bottom: 8px;
+}
+
+input.address {
+    width: 408px;
+}
+
+input.salary {
+    width: 304px;
+}
+
+.input-large {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-large input{
+    text-indent: 16px;
+}
+
+input.product {
+    width: 625px;
+    height: 48px;
+    border-radius: 8px;
+    opacity: 0.5;
+    margin-bottom: 8px;
+}
+
+.input-center {
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-center button {
+    width: 408px;
+    height: 48px;
+    background: #232529;
+    border-radius: 4px;
 }
